@@ -52,11 +52,12 @@ class CentralGo:
             smtp_server = parser.get('mailing', 'smtp_server')
             user_name = parser.get('mailing', 'user_name')
             password = parser.get('mailing', 'password')
+            smtp_port = parser.get('mailing', 'smtp_port')
         except Exception:
             self.log('main.log', 'info', 'If you want to activate mailing option, please configure general.conf')
             
-        result = collections.namedtuple('conf', ['mailing_is_active', 'me', 'smtp_server', 'user_name'])
-        r = result(mailing_is_active, me, smtp_server, user_name )
+        result = collections.namedtuple('conf', ['mailing_is_active', 'me', 'smtp_server', 'smtp_port', 'user_name'])
+        r = result(mailing_is_active, me, smtp_server, smtp_port, user_name )
         return r
 
 
