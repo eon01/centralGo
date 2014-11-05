@@ -20,7 +20,9 @@ This could help you to :
     > Replace your system crontab with a user-friendly definition language
     
 CentralGo uses a number of open source projects to work properly:
+   
       * [Python] - Its built-in packages
+   
       * [Schedule] - An in-process scheduler for periodic jobs
 
 ## Installation
