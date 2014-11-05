@@ -2,14 +2,13 @@
 CentralGo (CGo) is multithreaded ans user-friendly scheduler for running scripts and routine tasks.
 *   CGo works like Linux Crontab
 
-*   The definition of a job is quite easy, just add a similar line to jobs.conf :    
+The definition of a job is quite easy, just add a similar line to jobs.conf :    
 
+    define "MyJob" run "echo 'I am the job number 0'" every "1 seconds" notify "me@email.com";
 
-    define \"MyJob\" run \"echo 'I am the job number 0'\" every \"1 seconds\" notify \"me@email.com\";
+or        
 
-or    
-
-    define \"MyJob\" run \"./run.sh\" every \"sunday at 23:55\" notify \"me@email.com\"
+    define "MyJob" run "./run.sh" every "sunday at 23:55" notify "me@email.com"
 
 *   CGo runs as a daemon
 
