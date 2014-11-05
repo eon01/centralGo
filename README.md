@@ -6,27 +6,29 @@ CentralGo (CGo) is multithreaded ans user-friendly scheduler for running scripts
 
 
     define \"MyJob\" run \"echo 'I am the job number 0'\" every \"1 seconds\" notify \"me@email.com\";
+
 or    
+
     define \"MyJob\" run \"./run.sh\" every \"sunday at 23:55\" notify \"me@email.com\"
 
 *   CGo runs as a daemon
 
-            This could help you to : 
+This could help you to : 
 
-            > Run routine tasks like checking if a website is up or down every 5 minutes
-            > Schedule tasks for with email notification
-            > Keep logs on scheduled tasks
-            > Replace your system crontab with a user-friendly definition language
+    > Run routine tasks like checking if a website is up or down every 5 minutes
+    > Schedule tasks for with email notification
+    > Keep logs on scheduled tasks
+    > Replace your system crontab with a user-friendly definition language
     
-    CentralGo uses a number of open source projects to work properly:
-              * [Python] - Its built-in packages
-              * [Schedule] - An in-process scheduler for periodic jobs
+CentralGo uses a number of open source projects to work properly:
+      * [Python] - Its built-in packages
+      * [Schedule] - An in-process scheduler for periodic jobs
 
 ## Installation
 Download the package and run setup.sh from the downloaded folder.
 
 ## Usage
-configure : 
+configure
 
     /opt/CentralGo/conf/jobs.conf
     /opt/CentralGo/conf/general.conf
@@ -39,4 +41,5 @@ then launch the daemon
 GNU/GPL V2
 
 
-Maintainer : amri.aymen@gmail.com / @eon01 (Twitter/Github)
+## Maintainer 
+amri.aymen@gmail.com / @eon01 (Twitter/Github)
