@@ -27,9 +27,12 @@ Download the package and run setup.sh from the downloaded folder.
 
 ## Usage
 configure : 
+
     /opt/CentralGo/conf/jobs.conf
     /opt/CentralGo/conf/general.conf
+
 then launch the daemon
+
     centralgo start|stop|restart
 
 ## License
