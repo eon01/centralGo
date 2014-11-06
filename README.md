@@ -1,4 +1,8 @@
 # CentralGo
+
+
+Beta - Work in progress
+
 CentralGo (CGo) is multithreaded ans user-friendly scheduler for running scripts and routine tasks.
 *   CGo works like Linux Crontab
 
@@ -26,7 +30,15 @@ CentralGo uses a number of open source projects to work properly:
       * [Schedule] - An in-process scheduler for periodic jobs
 
 ## Installation
-Download the package and run setup.sh from the downloaded folder.
+
+    sudo wget https://github.com/eon01/centralGo/archive/master.zip -O CentralGo.zip; 
+    unzip CentralGo.zip; 
+    rm CentralGo.zip; 
+    mv centralGo-master CentralGo; 
+    cd CentralGo; 
+    sudo  mkdir /opt/CentralGo;
+    sudo cp * /opt/CentralGo; 
+    sudo ln -s /opt/CentralGo/centralgo.py /usr/bin/centralgo
 
 ## Usage
 configure
