@@ -12,7 +12,7 @@ The definition of a job is quite easy, just add a similar line to jobs.conf :
 
 or        
 
-    define "MyJob" run "./run.sh" every "sunday at 23:55" notify "me@email.com"
+    define "MyJob" run "run.sh" every "sunday at 23:55" notify "me@email.com"
 
 *   CGo runs as a daemon
 
