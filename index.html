@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Centralgo by eon01</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Centralgo</h1>
+        <p>A Multithreaded Scheduling Tool For Running Scripts And Routine Tasks.</p>
+
+        <p class="view"><a href="https://github.com/eon01/centralGo">View the Project on GitHub <small>eon01/centralGo</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/eon01/centralGo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/eon01/centralGo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/eon01/centralGo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="centralgo" class="anchor" href="#centralgo" aria-hidden="true"><span class="octicon octicon-link"></span></a>CentralGo</h1>
+
+<p>Beta - Work in progress</p>
+
+<p>CentralGo (CGo) is multithreaded ans user-friendly scheduler for running scripts and routine tasks.</p>
+
+<ul>
+<li>  CGo works like Linux Crontab</li>
+</ul>
+
+<p>The definition of a job is quite easy, just add a similar line to jobs.conf :    </p>
+
+<pre><code>define "MyJob" run "echo 'I am the job number 0'" every "1 seconds" notify "me@email.com";
+</code></pre>
+
+<p>or        </p>
+
+<pre><code>define "MyJob" run "run.sh" every "sunday at 23:55" notify "me@email.com"
+</code></pre>
+
+<ul>
+<li>  CGo runs as a daemon</li>
+</ul>
+
+<p>This could help you to : </p>
+
+<pre><code>&gt; Run routine tasks like checking if a website is up or down every 5 minutes
+&gt; Schedule tasks for with email notification
+&gt; Keep logs on scheduled tasks
+&gt; Replace your system crontab with a user-friendly definition language
+</code></pre>
+
+<p>CentralGo uses a number of open source projects to work properly:</p>
+
+<pre><code>  * [Python] - Its built-in packages
+
+  * [Schedule] - An in-process scheduler for periodic jobs
+</code></pre>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>sudo wget https://github.com/eon01/centralGo/archive/master.zip -O CentralGo.zip; 
+unzip CentralGo.zip; 
+rm CentralGo.zip; 
+mv centralGo-master CentralGo; 
+cd CentralGo; 
+sudo  mkdir /opt/CentralGo;
+sudo cp * /opt/CentralGo; 
+sudo ln -s /opt/CentralGo/centralgo.py /usr/bin/centralgo
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>configure</p>
+
+<pre><code>/opt/CentralGo/conf/jobs.conf
+/opt/CentralGo/conf/general.conf
+</code></pre>
+
+<p>then launch the daemon</p>
+
+<pre><code>centralgo start|stop|restart
+</code></pre>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>GNU/GPL V2</p>
+
+<h2>
+<a id="maintainer" class="anchor" href="#maintainer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintainer</h2>
+
+<p><a href="mailto:amri.aymen@gmail.com">amri.aymen@gmail.com</a> / <a href="https://github.com/eon01" class="user-mention">@eon01</a> (Twitter/Github)</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/eon01">eon01</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
